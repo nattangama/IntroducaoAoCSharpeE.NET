@@ -2,6 +2,7 @@ using System;
 using Primeiro;
 using CSharp;
 using Interface;
+using Enum;
 
 namespace CSharp
 {
@@ -12,30 +13,33 @@ namespace CSharp
         
          static void Main(string[] args)
         {
-            Pessoa person = new Pessoa();
+            var     pessoa1 = (Pessoas)0;
+            Pessoas pessoa2 = Pessoas.Julia;
+            Pessoas pessoa3 = (Pessoas)4
 
-            person.Nome = "Nattan";
-            person.Idade = 20;
-            person.Estado = "Pernambuco";
 
-            var person2 = new Pessoa();
+             Animal animal = new Animal();
 
-            person2.Nome = "João";
-            person2.Idade = 23;
-            person2.Estado = "São Paulo";
+             animal.Nome = "Rex";
+             animal.NomeDono = "Jason";
+             animal.Especie = "Cachorro";
 
-           Animal animal = new Animal();
+             Pessoa person = new Pessoa();
 
-           animal.Nome = "Rex";
-           animal.NomeDono = "Jason";
-           animal.Especie = "Cachorro";
+             person.Nome = "Nathan";
+             person.Idade = 20;
+             person.Estado = "Pernambuco";
 
-            var animal = new Animal();
+             var person2 = new Pessoa();
 
-            var classe = new Classe();
-            var Classe2 = new Segundo.Classe();
+             person2.Nome = "João";
+             person2.Idade = 23;
+             person2.Estado = "São Paulo";
 
-            Console.WriteLine("Hello World!");
+             var classe = new Classe();
+             var Classe2 = new Segundo.Classe();
+
+             Console.WriteLine(pessoa3);
         }
     }
 }
